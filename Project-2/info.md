@@ -14,4 +14,23 @@
 
 ## Steps
 
-We approach this project with a GO language approach which isn't using OO approach.
+NOTE: We approach this project with a GO language approach which isn't using OO approach.
+
+1. We set up a 'main.go' file in which we lay out template that includes cards slides, a newCards function and append method to test out how append works.
+
+2. We set up 'deck.go' file and create the following:
+       a. a 'type' of []string called deck: 
+
+       ![Alt text](image-1.png)
+
+       b. function to iterate through the cards slides and use 'receivers' to set it up:
+       Here, the receiver argument 'd' would replace the 'Cards' slides as whenever it calls the print() method, it gets put into as an argument (d here).
+       Also, something to note is that the 'deck' shown here is acting like a type of []string.
+
+       In deck.go:
+       ![Alt text](image-2.png)
+
+       In main.go:
+       ![Alt text](image-3.png)
+
+
