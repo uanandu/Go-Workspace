@@ -14,15 +14,4 @@
 
 ## Steps
 
-### Step 1:Variable declaration
-
-### Step 2: Functions and return types
-
-#### NOTE: The functions other than main would be either in another file and gets imported or under main()
-
-The function should have the data type labelled.
-![Alt text](image.png)
-
-### Step 3: Slices and For loops
-
-### Step 4: 
+We approach this project with a GO language approach which isn't using OO approach.
