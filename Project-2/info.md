@@ -21,16 +21,16 @@ NOTE: We approach this project with a GO language approach which isn't using OO 
 2. We set up 'deck.go' file and create the following:
        a. a 'type' of []string called deck: 
 
-       ![Alt text](image-1.png)
+       ![assigning deck as type](image-1.png)
 
        b. function to iterate through the cards slides and use 'receivers' to set it up:
        Here, the receiver argument 'd' would replace the 'Cards' slides as whenever it calls the print() method, it gets put into as an argument (d here).
        Also, something to note is that the 'deck' shown here is acting like a type of []string.
 
        In deck.go:
-       ![Alt text](image-2.png)
+       ![deck.go page](image-2.png)
 
        In main.go:
-       ![Alt text](image-3.png)
+       ![main.go page](image-3.png)
 
 
