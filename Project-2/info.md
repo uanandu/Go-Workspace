@@ -28,9 +28,11 @@ Here, the receiver argument 'd' would replace the 'Cards' slides as whenever it 
 Also, something to note is that the 'deck' shown here is acting like a type of []string.
 
 In deck.go:
+
 ![deck.go page](image-2.png)
 
 In main.go:
+
 ![main.go page](image-3.png)
 
 
