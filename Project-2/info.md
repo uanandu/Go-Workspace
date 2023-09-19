@@ -23,7 +23,7 @@ a. a 'type' of []string called deck:
 
 ![assigning deck as type](image-1.png)
 
-b. function to iterate through the cards slides and use 'receivers' to set it up:
+b. function to iterate through the cards slices and use 'receivers' to set it up:
 Here, the receiver argument 'd' would replace the 'Cards' slides as whenever it calls the print() method, it gets put into as an argument (d here).
 Also, something to note is that the 'deck' shown here is acting like a type of []string.
 
@@ -34,5 +34,19 @@ In deck.go:
 In main.go:
 
 ![main.go page](image-3.png)
+
+3. Now we will create the newDeck function.
+
+To make the newDeck with all the card values, here since we are only using slices we do two slices one with suites and the other with values as:
+
+![suites and values slices](image-4.png)
+
+Now we create a nested for loop to loop through it to add new card to our cards slice. and we return the cards.
+
+
+![for loop for value and deck](image-5.png)
+
+4. We will now create a deal function with the 3 cards in hand and the rest on reserve.
+
 
 

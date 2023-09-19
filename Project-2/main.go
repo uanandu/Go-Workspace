@@ -2,14 +2,9 @@ package main
 
 func main() {
 
-	// we declare multiple cards
-	cards := deck{"Ace of DIamonds", newCard()}
+	cards := newDeck()
 
-	// append or add
-	cards = append(cards, "Six of spades")
-
-	cards.print()
-
+	deal(cards, 5)
 }
 
 func newCard() string {
