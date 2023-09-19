@@ -4,10 +4,14 @@ package main
 
 import "fmt"
 
+var remainingTickets int
+var concertTickets int
+var concertName string
+
 func main() {
-	var concertName = "Mamma mia"
-	const concertTickets = 50
-	var remainingTickets = 50
+	concertName = "Mamma mia"
+	concertTickets = 50
+	remainingTickets = 50
 
 	fmt.Printf("Welcome to %v booking application\n", concertName)
 	fmt.Printf("We have a total of %v tickets and %v are still available.\n", concertTickets, remainingTickets)
@@ -23,5 +27,17 @@ func main() {
 	fmt.Println("Enter how many tickets you need: ")
 	fmt.Scan(&userTicket)
 
-	fmt.Printf("User %v booked %v tickets.\n", userName, userTicket)
+	if userTicket > remainingTickets {
+		fmt.Printf("Unfortunately we only have %v tickets left!!", remainingTickets)
+
+	} else {
+		fmt.Printf("User %v booked %v tickets.\n", userName, userTicket)
+		buyTicket(userTicket)
+		fmt.Printf("We have %v tickets left", remainingTickets)
+	}
+
+}
+
+func buyTicket(userTicket int) {
+	remainingTickets = concertTickets - userTicket
 }
